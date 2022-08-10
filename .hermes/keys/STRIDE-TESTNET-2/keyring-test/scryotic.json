@@ -1,0 +1,27 @@
+{
+  "public_key": "xpub6H4Cua6bNzSfmoWU8hohma2LJp6HTH4Rw9aXVsM97RAAd5zqN8v1Em4AnpuiMxmECsNRfG93SxAzxY6AoCCuZ6QShYL9vdXiVztjY8sg6hd",
+  "private_key": "xprvA44rW4ZhYctNZKS12gGhQS5bknFo3pLaZvevhUwXZ5dBkHfgpbbkgxjgwaTZWSZyJckhMenWEWko6vsWkb7cMDCkyqJFiJgFybsJMj4LoE6",
+  "account": "stride17tx9a6nxu9s4syulqhwyylhfytavsey75ntqyf",
+  "address": [
+    242,
+    204,
+    94,
+    234,
+    102,
+    225,
+    97,
+    88,
+    19,
+    159,
+    5,
+    220,
+    66,
+    126,
+    233,
+    34,
+    250,
+    200,
+    100,
+    158
+  ]
+}

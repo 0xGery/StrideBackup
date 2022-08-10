@@ -1,0 +1,85 @@
+Tue Aug  9 09:20:17 UTC 2022
+From https://github.com/Stride-Labs/stride
+ * branch            main       -> FETCH_HEAD
+   d720aae..269cd90  main       -> origin/main
+Merge made by the 'recursive' strategy.
+ .github/workflows/gosec.yml                        |  18 ++
+ LICENSE                                            | 222 +++++++++++++++++++--
+ Makefile                                           |   9 +
+ README.md                                          |  19 +-
+ app/app.go                                         |   5 +-
+ app/encoding.go                                    |   3 +-
+ cmd/strided/root.go                                |   8 +-
+ go.mod                                             |  11 +-
+ go.sum                                             |  19 +-
+ proto/stakeibc/README.md                           |   5 +
+ scripts-local/init_stride.sh                       |   3 +
+ scripts-local/vesting/README.md                    |  68 +++++++
+ scripts-local/vesting/add_vesting_accts.sh         |  26 +++
+ scripts-local/vesting/vesting_accts.csv            |   3 +
+ scripts/LICENSES/OSMO_LICENSE                      | 201 +++++++++++++++++++
+ scripts/LICENSES/QUICK_LICENSE                     | 201 +++++++++++++++++++
+ scripts/LICENSES/README.md                         |   1 +
+ scripts/README.md                                  |   1 +
+ utils/utils.go                                     |  37 ++++
+ x/README.md                                        |  13 ++
+ x/epochs/LICENSE                                   | 201 +++++++++++++++++++
+ x/epochs/README.md                                 |  25 ++-
+ x/epochs/client/cli/query.go                       |   3 +-
+ x/interchainquery/LICENSE                          | 201 +++++++++++++++++++
+ x/interchainquery/README.md                        |  97 ++++++++-
+ x/interchainquery/keeper/abci.go                   |   3 +-
+ x/interchainquery/keeper/keeper.go                 |   3 +-
+ x/interchainquery/keeper/msg_server.go             |  10 +-
+ x/mint/LICENSE                                     | 201 +++++++++++++++++++
+ x/mint/keeper/keeper.go                            |   8 +-
+ x/mint/types/params.go                             |  21 +-
+ x/records/client/cli/tx.go                         |   3 +-
+ x/records/module_ibc.go                            |   4 +-
+ x/stakeibc/client/cli/tx.go                        |   3 +-
+ x/stakeibc/keeper/callbacks.go                     |  16 +-
+ x/stakeibc/keeper/hooks.go                         |  75 ++++---
+ x/stakeibc/keeper/host_zone.go                     |  10 +-
+ x/stakeibc/keeper/ibc_handlers.go                  |  21 +-
+ x/stakeibc/keeper/msg_server_add_validator.go      |   7 +-
+ .../keeper/msg_server_claim_undelegated_tokens.go  |  11 +-
+ x/stakeibc/keeper/msg_server_liquid_stake.go       |   8 +-
+ .../keeper/msg_server_rebalance_validators.go      |  11 +-
+ x/stakeibc/keeper/msg_server_redeem_stake.go       |   8 +-
+ x/stakeibc/keeper/msg_server_register_host_zone.go |  18 +-
+ x/stakeibc/keeper/msg_server_register_ica.go       |   2 +-
+ x/stakeibc/keeper/msg_server_submit_tx.go          |  19 +-
+ x/stakeibc/keeper/unbonding_records.go             |  44 ++--
+ x/stakeibc/keeper/validator_selection.go           |   8 +-
+ x/stakeibc/module_ibc.go                           |   5 +-
+ x/stakeibc/module_simulation.go                    |   9 +-
+ x/stakeibc/types/errors.go                         |   1 +
+ x/stakeibc/types/message_register_host_zone.go     |   5 +-
+ 52 files changed, 1759 insertions(+), 175 deletions(-)
+ create mode 100644 .github/workflows/gosec.yml
+ create mode 100644 proto/stakeibc/README.md
+ create mode 100644 scripts-local/vesting/README.md
+ create mode 100644 scripts-local/vesting/add_vesting_accts.sh
+ create mode 100644 scripts-local/vesting/vesting_accts.csv
+ create mode 100644 scripts/LICENSES/OSMO_LICENSE
+ create mode 100644 scripts/LICENSES/QUICK_LICENSE
+ create mode 100644 scripts/LICENSES/README.md
+ create mode 100644 scripts/README.md
+ create mode 100644 x/README.md
+ create mode 100644 x/epochs/LICENSE
+ create mode 100644 x/interchainquery/LICENSE
+ create mode 100644 x/mint/LICENSE
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  ed14765 Merge branch 'main' of https://github.com/Stride-Labs/stride into HEAD
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> ed14765
+
+HEAD is now at 4184e0c comments per vishal
+go: downloading google.golang.org/protobuf v1.28.1
+go: downloading github.com/fsnotify/fsnotify v1.5.4
+go: downloading golang.org/x/sys v0.0.0-20220615213510-4f61da869c0c
